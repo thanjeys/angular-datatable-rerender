@@ -1,0 +1,60 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h3 class="modal-title">Product</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="close()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="modal-body">
+        <form [formGroup]="productForm" #myForm="ngForm" (ngSubmit)="productFormSubmit()">
+            <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input type="text" formControlName="name" matInput>
+                <mat-error *ngIf="formValidate.name.hasError('required')">This field is required.</mat-error>
+                <mat-error *ngIf="formValidate?.name?.errors?.serverError"> {{ formValidate?.name?.errors?.serverError }} </mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+              <mat-label>Item Code</mat-label>
+              <input type="text" formControlName="item_code" matInput>
+              <mat-error *ngIf="formValidate?.item_code?.errors?.required">This field is required.</mat-error>
+              <mat-error *ngIf="formValidate?.item_code?.errors?.serverError"> {{ formValidate?.item_code?.errors?.serverError }} </mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Item Type</mat-label>
+            <mat-select formControlName="item_type">
+                <mat-option *ngFor="let item_type of item_types;" value="{{ item_type?.name}} - ( {{ item_type?.key }} )">
+                    <span>{{ item_type?.name }} - ( {{ item_type?.key }} )</span>
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="formValidate?.item_type?.errors?.required">This field is required.</mat-error>
+            <mat-error *ngIf="formValidate?.item_type?.errors?.serverError"> {{ formValidate?.item_type?.errors?.serverError }} </mat-error>
+        </mat-form-field>
+
+          <mat-form-field>
+              <mat-label>Item Description</mat-label>
+              <!-- <input type="text" formControlName="item_description" matInput> -->
+              <textarea matInput formControlName="item_description" ></textarea>
+              <mat-error *ngIf="formValidate?.item_description?.errors?.required">This field is required.</mat-error>
+              <mat-error *ngIf="formValidate?.item_description?.errors?.serverError"> {{ formValidate?.item_description?.errors?.serverError }} </mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+              <mat-label>Price</mat-label>
+              <input type="number" formControlName="price" min="1" matInput>
+              <mat-error *ngIf="formValidate?.price?.errors?.required">This field is required.</mat-error>
+              <!-- <mat-error *ngIf="formValidate?.price?.errors?.pattern">Please enter valid price</mat-error> -->
+              <mat-error *ngIf="formValidate?.price?.errors?.serverError"> {{ formValidate?.price?.errors?.serverError }} </mat-error>
+          </mat-form-field>
+
+          <div class="footer-block text-center">
+            <div class="button-group">
+                <button type="submit" mat-raised-button class="btn-int-blue">Submit</button>
+            </div>
+          </div>
+
+      </form>
+    </div>
+</div>

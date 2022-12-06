@@ -1,0 +1,24 @@
+<h1>My Products</h1>
+<button (click)="createProduct()" mat-raised-button>New Product</button>
+<table [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" datatable class="row-border hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Item Type</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- <tr *ngFor="let product of products"> -->
+    <ng-template ngFor let-product [ngForOf]="productsList" let-i="index">
+    <tr>
+      <td>{{ i+1 }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.item_type }}</td>
+      <td><a href (click)="edit(product.id)">Edit</a></td>
+    </tr>
+  </ng-template>
+
+  </tbody>
+</table>
