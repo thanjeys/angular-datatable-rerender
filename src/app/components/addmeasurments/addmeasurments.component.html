@@ -1,0 +1,1002 @@
+<form  name="form" (ngSubmit)="measurment.form.valid && onSubmit()" #measurment="ngForm" novalidate>
+<h2>SUIT/SHERWANI/JODHPURI/BLAZER/BANDI :</h2>
+<div class="row">
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_fl" class="form-label">FL Measurment</label>
+            <input type="text" class="form-control"  name="suit_fl" [(ngModel)]="form.suit_fl" required #suit_fl="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_fl.errors && measurment.submitted">
+                 Please enter FL Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_bl" class="form-label">BL Measurment</label>
+            <input type="text" class="form-control"  name="suit_bl" [(ngModel)]="form.suit_bl" required #suit_bl="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_bl.errors && measurment.submitted">
+                 Please enter BL Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_suitl" class="form-label">SUIT.L Measurment</label>
+            <input type="text" class="form-control"  name="suit_suitl" [(ngModel)]="form.suit_suitl" required #suit_suitl="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_suitl.errors && measurment.submitted">
+                 Please enter SUIT.L Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_knl" class="form-label">KN.L Measurment</label>
+            <input type="text" class="form-control" name="suit_knl" [(ngModel)]="form.suit_knl" required #suit_knl="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_knl.errors && measurment.submitted">
+                 Please enter KN.L Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_wl" class="form-label">W.L Measurment</label>
+            <input type="text" class="form-control" name="suit_wl" [(ngModel)]="form.suit_wl" required #suit_wl="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_wl.errors && measurment.submitted">
+                 Please enter W.L Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_sh" class="form-label">SH Measurment</label>
+            <input type="text" class="form-control" name="suit_sh" [(ngModel)]="form.suit_sh" required #suit_sh="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_sh.errors && measurment.submitted">
+                 Please enter SH Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_nsh" class="form-label">N-SH Measurment</label>
+            <input type="text" class="form-control"  name="suit_nsh" [(ngModel)]="form.suit_nsh" required #suit_nsh="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_nsh.errors && measurment.submitted">
+                 Please enter N-SH Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_sl" class="form-label">SL Measurment</label>
+            <input type="text" class="form-control" name="suit_sl" [(ngModel)]="form.suit_sl" required #suit_sl="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_sl.errors && measurment.submitted">
+                 Please enter SL Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_ch" class="form-label">CH Measurment</label>
+            <input type="text" class="form-control" name="suit_ch" [(ngModel)]="form.suit_ch" required #suit_ch="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_ch.errors && measurment.submitted">
+                 Please enter CH Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_st" class="form-label">ST Measurment</label>
+            <input type="text" class="form-control"  name="suit_st" [(ngModel)]="form.suit_st" required #suit_st="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_st.errors && measurment.submitted">
+                 Please enter ST Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_h" class="form-label">H Measurment</label>
+            <input type="text" class="form-control" name="suit_h" [(ngModel)]="form.suit_h" required #suit_h="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_h.errors && measurment.submitted">
+                 Please enter H Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_cf" class="form-label">CF Measurment</label>
+            <input type="text" class="form-control" name="suit_cf" [(ngModel)]="form.suit_cf" required #suit_cf="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_cf.errors && measurment.submitted">
+                 Please enter CF Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_cb" class="form-label">CB Measurment</label>
+            <input type="text" class="form-control"  name="suit_cb" [(ngModel)]="form.suit_cb" required #suit_cb="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_cb.errors && measurment.submitted">
+                 Please enter CB Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_bicep" class="form-label">BICEP Measurment</label>
+            <input type="text" class="form-control" name="suit_bicep" [(ngModel)]="form.suit_bicep" required #suit_bicep="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_bicep.errors && measurment.submitted">
+                 Please enter BICEP Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_hb" class="form-label">H.B Measurment</label>
+            <input type="text" class="form-control"  name="suit_hb" [(ngModel)]="form.suit_hb" required #suit_hb="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_hb.errors && measurment.submitted">
+                 Please enter H.B Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_hf" class="form-label">H.F Measurment</label>
+            <input type="text" class="form-control"  name="suit_hf" [(ngModel)]="form.suit_hf" required #suit_hf="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_hf.errors && measurment.submitted">
+                 Please enter H.F Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="suit_n" class="form-label">N Measurment</label>
+            <input type="text" class="form-control"  name="suit_n" [(ngModel)]="form.suit_n" required #suit_n="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="suit_n.errors && measurment.submitted">
+                 Please enter N Measurment
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- shirts srart -->
+
+<h2 class="mt-3">SHIRT/KURTA :</h2>
+<div class="row">
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="shirt_l" class="form-label">L Measurment</label>
+            <input type="text" class="form-control"  name="shirt_l" [(ngModel)]="form.shirt_l" required #shirt_l="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="shirt_l.errors && measurment.submitted">
+                 Please enter L Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="shirt_kl" class="form-label">K.L Measurment</label>
+            <input type="text" class="form-control"  name="shirt_kl" [(ngModel)]="form.shirt_kl" required #shirt_kl="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="shirt_kl.errors && measurment.submitted">
+                 Please enter K.L Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="shirt_sl" class="form-label">S.L Measurment</label>
+            <input type="text" class="form-control"  name="shirt_sl" [(ngModel)]="form.shirt_sl" required #shirt_sl="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="shirt_sl.errors && measurment.submitted">
+                 Please enter S.L Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="shirt_arm" class="form-label">ARM Measurment</label>
+            <input type="text" class="form-control"  name="shirt_arm" [(ngModel)]="form.shirt_arm" required #shirt_arm="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="shirt_arm.errors && measurment.submitted">
+                 Please enter ARM Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="shirt_farm" class="form-label">F.ARM Measurment</label>
+            <input type="text" class="form-control"  name="shirt_farm" [(ngModel)]="form.shirt_farm" required #shirt_farm="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="shirt_farm.errors && measurment.submitted">
+                 Please enter F.ARM Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="mb-3 form-group">
+            <label for="shirt_cuff" class="form-label">CUFF Measurment</label>
+            <input type="text" class="form-control"  name="shirt_cuff" [(ngModel)]="form.shirt_cuff" required #shirt_cuff="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="shirt_cuff.errors && measurment.submitted">
+                 Please enter CUFF Measurment
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- TROUSER start -->
+
+<h2 class="mt-3">TROUSER :</h2>
+<div class="row">
+    <div class="col-md-2"> 
+        <div class="mb-3 form-group">
+            <label for="trouser_l" class="form-label">L Measurment</label>
+            <input type="text" class="form-control"  name="trouser_l" [(ngModel)]="form.trouser_l" required #trouser_l="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="trouser_l.errors && measurment.submitted">
+                 Please enter L Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"> 
+        <div class="mb-3 form-group">
+            <label for="trouser_w" class="form-label">W Measurment</label>
+            <input type="text" class="form-control"  name="trouser_w" [(ngModel)]="form.trouser_w" required #trouser_w="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="trouser_w.errors && measurment.submitted">
+                 Please enter W Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"> 
+        <div class="mb-3 form-group">
+            <label for="trouser_h" class="form-label">H Measurment</label>
+            <input type="text" class="form-control"  name="trouser_h" [(ngModel)]="form.trouser_h" required #trouser_h="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="trouser_h.errors && measurment.submitted">
+                 Please enter H Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"> 
+        <div class="mb-3 form-group">
+            <label for="trouser_fth" class="form-label">F.TH Measurment</label>
+            <input type="text" class="form-control"  name="trouser_fth" [(ngModel)]="form.trouser_fth" required #trouser_fth="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="trouser_fth.errors && measurment.submitted">
+                 Please enter F.TH Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"> 
+        <div class="mb-3 form-group">
+            <label for="trouser_kn" class="form-label">KN Measurment</label>
+            <input type="text" class="form-control"  name="trouser_kn" [(ngModel)]="form.trouser_kn" required #trouser_kn="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="trouser_kn.errors && measurment.submitted">
+                 Please enter KN Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"> 
+        <div class="mb-3 form-group">
+            <label for="trouser_b" class="form-label">B Measurment</label>
+            <input type="text" class="form-control"  name="trouser_b" [(ngModel)]="form.trouser_b" required #trouser_b="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="trouser_b.errors && measurment.submitted">
+                 Please enter B Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"> 
+        <div class="mb-3 form-group">
+            <label for="trouser_hl" class="form-label">H.L Measurment</label>
+            <input type="text" class="form-control"  name="trouser_hl" [(ngModel)]="form.trouser_hl" required #trouser_hl="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="trouser_hl.errors && measurment.submitted">
+                 Please enter H.L Measurment
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"> 
+        <div class="mb-3 form-group">
+            <label for="trouser_bal" class="form-label">BAL Measurment</label>
+            <input type="text" class="form-control"  name="trouser_bal" [(ngModel)]="form.trouser_bal" required #trouser_bal="ngModel">
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="trouser_bal.errors && measurment.submitted">
+                 Please enter BAL Measurment
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Remarks start -->
+<!-- <h2 class="mt-3">Remarks :</h2> -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+            <label for="remarks" class="form-label">Remarks</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="remarks"  [(ngModel)]="form.remarks" required #remarks="ngModel" rows="3"></textarea>                                 
+            <div class="alert alert-danger mt-2" role="alert" *ngIf="remarks.errors && measurment.submitted">
+               Please enter Remarks
+            </div>
+         </div>
+    </div>
+</div>
+
+<!-- Radio buttons start -->
+
+<div class="row" >
+    <div class="col-md-6 text-center"><b>BACK SHAPE</b></div>
+    <div class="col-md-6 text-center"><b>STOMACH</b></div>
+</div>
+<div class="row" >
+    <div class="col-md-6 shape">
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="backshape" id="backshape"
+                  value="normal" [(ngModel)]="form.backshape"  #backshape="ngModel"
+                />
+                <label class="form-check-label" for="backshape">                
+                    <img src="assets/01.png">
+                    <p><b>NORMAL</b></p>
+                </label>
+            </div>               
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="backshape" id="backshape"
+                  value="hunched" [(ngModel)]="form.backshape"  #backshape="ngModel"
+                />
+                <label class="form-check-label" for="backshape">
+                    <img src="assets/02.png">
+                    <p><b>HUNCHED</b></p>
+                </label>            
+            </div>          
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="backshape" id="backshape"
+                  value="erect" [(ngModel)]="form.backshape"  #backshape="ngModel"
+                />
+                <label class="form-check-label" for="backshape">
+                    <img src="assets/03.png">
+                    <p><b>ERECT</b></p>
+                </label>
+            </div>         
+        </div>
+    </div>
+    <div class="col-md-6 shape">
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="stomach" id="stomach"
+                  value="flat" [(ngModel)]="form.stomach"  #stomach="ngModel"
+                />
+                <label class="form-check-label" for="stomach">
+                    <img src="assets/04.png">
+                    <p><b>FLAT</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="stomach" id="stomach"
+                  value="slight" [(ngModel)]="form.stomach"  #stomach="ngModel"
+                />
+                <label class="form-check-label" for="stomach">
+                    <img src="assets/05.png">
+                    <p><b>SLIGHT</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="stomach" id="stomach"
+                  value="large" [(ngModel)]="form.stomach"  #stomach="ngModel"
+                />
+                <label class="form-check-label" for="stomach">
+                    <img src="assets/06.png">
+                    <p><b>LARGE</b></p>
+                </label>
+            </div>         
+        </div>
+    </div>   
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-6 text-center"><b>SHOULDER TYPE</b></div>
+    <div class="col-md-6 text-center"><b>BUTTON TYPE</b></div>
+</div>
+<div class="row" >
+    <div class="col-md-6 shape">
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="shoulder" id="shoulder"
+                  value="square" [(ngModel)]="form.shoulder"  #shoulder="ngModel"
+                />
+                <label class="form-check-label" for="shoulder">
+                    <img src="assets/07.png">
+                    <p><b>SQUARE</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="shoulder" id="shoulder"
+                  value="regular" [(ngModel)]="form.shoulder"  #shoulder="ngModel"
+                />
+                <label class="form-check-label" for="shoulder">
+                    <img src="assets/08.png">
+                    <p><b>REGULAR</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="shoulder" id="shoulder"
+                  value="sloping" [(ngModel)]="form.shoulder"  #shoulder="ngModel"
+                />
+                <label class="form-check-label" for="shoulder">
+                    <img src="assets/09.png">
+                    <p><b>SLOPING</b></p>
+                </label>
+            </div>         
+        </div>
+    </div>
+    <div class="col-md-6 shape">
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="button" id="button"
+                  value="1 button" [(ngModel)]="form.button"  #button="ngModel"
+                />
+                <label class="form-check-label" for="button">
+                    <img src="assets/10.png">
+                    <p><b>1 BUTTON</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="button" id="button"
+                  value="2 button" [(ngModel)]="form.button"  #button="ngModel"
+                />
+                <label class="form-check-label" for="button">
+                    <img src="assets/11.png">
+                    <p><b>2 BUTTON</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="button" id="button"
+                  value="double brusted" [(ngModel)]="form.button"  #button="ngModel"
+                />
+                <label class="form-check-label" for="button">
+                    <img src="assets/12.png">
+                    <p><b>DOUBLE BRUSTED</b></p>
+                </label>
+            </div>         
+        </div>
+    </div>   
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-6 text-center"><b>LAPEL TYPE</b></div>
+    <div class="col-md-6 text-center"><b>VENT TYPE</b></div>
+</div>
+<div class="row" >
+    <div class="col-md-6 shape">
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="lapel" id="lapel"
+                  value="peak lapel" [(ngModel)]="form.lapel"  #lapel="ngModel"
+                />
+                <label class="form-check-label" for="lapel">
+                    <img src="assets/13.png">
+                    <p><b>PEAK LAPEL</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="lapel" id="lapel"
+                  value="notch lapel" [(ngModel)]="form.lapel"  #lapel="ngModel"
+                />
+                <label class="form-check-label" for="lapel">
+                    <img src="assets/14.png">
+                    <p><b>NOTCH LAPEL</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="lapel" id="lapel"
+                  value="shawl lapel" [(ngModel)]="form.lapel"  #lapel="ngModel"
+                />
+                <label class="form-check-label" for="lapel">
+                    <img src="assets/15.png">
+                    <p><b>SHAWL LAPEL</b></p>
+                </label>
+            </div>         
+        </div>
+    </div>
+    <div class="col-md-6 shape">
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="vent" id="vent"
+                  value="no vent" [(ngModel)]="form.vent"  #vent="ngModel"
+                />
+                <label class="form-check-label" for="vent">
+                    <img src="assets/17.png">
+                    <p><b>NO VENT</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="vent" id="vent"
+                  value="center vent" [(ngModel)]="form.vent"  #vent="ngModel"
+                />
+                <label class="form-check-label" for="vent">
+                    <img src="assets/18.png">
+                    <p><b>CENTER VENT</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="vent" id="vent"
+                  value="side vent" [(ngModel)]="form.vent"  #vent="ngModel"
+                />
+                <label class="form-check-label" for="vent">
+                    <img src="assets/19.png">
+                    <p><b>SIDE VENT</b></p>
+                </label>
+            </div>         
+        </div> 
+    </div>   
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-6 text-center"><b>POCKET</b></div>
+    <div class="col-md-2 text-center"><b>JODHPURI</b></div>
+    <div class="col-md-4 text-center"><b>TYPE</b></div>
+</div>
+<div class="row" >
+    <div class="col-md-6 shape">        
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="pocket" id="pocket"
+                value="slant pocket" [(ngModel)]="form.pocket"  #pocket="ngModel"
+                />
+                <label class="form-check-label" for="pocket">
+                    <img src="assets/20.png">
+                    <p><b>SLANT POCKET</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="pocket" id="pocket"
+                value="straight pocket" [(ngModel)]="form.pocket"  #pocket="ngModel"
+                />
+                <label class="form-check-label" for="pocket">
+                    <img src="assets/21.png">
+                    <p><b>STRAIGHT POCKET</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="pocket" id="pocket"
+                value="patch pocket" [(ngModel)]="form.pocket"  #pocket="ngModel"
+                />
+                <label class="form-check-label" for="pocket">
+                    <img src="assets/22.png">
+                    <p><b>PATCH POCKET</b></p>
+                </label>
+            </div>         
+        </div>
+    </div>
+    <div class="col-md-2 shape">
+        <div class="col-md-12">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="jodhpuri" id="jodhpuri"
+                  value="jodhpuri" [(ngModel)]="form.jodhpuri"  #jodhpuri="ngModel"
+                />
+                <label class="form-check-label" for="jodhpuri">
+                    <img src="assets/16.png">
+                    <p><b>JODHPURI</b></p>
+                </label>
+            </div>         
+        </div>
+    </div> 
+    <div class="col-md-4 shape">        
+        <div class="col-md-6 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="type" id="type"
+                value="regular" [(ngModel)]="form.type"  #type="ngModel"
+                />
+                <label class="form-check-label" for="type">
+                    <img src="assets/23.png">
+                    <p><b>REGULAR</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-6 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="type" id="type"
+                value="functional" [(ngModel)]="form.type"  #type="ngModel"
+                />
+                <label class="form-check-label" for="type">
+                    <img src="assets/24.png">
+                    <p><b>FUNCTIONAL</b></p>
+                </label>
+            </div>         
+        </div>
+    </div>  
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-3 text-center"><b>PLEAT</b></div>
+    <div class="col-md-3 text-center"><b>POCKET TYPE</b></div>
+    <div class="col-md-3 text-center"><b>BACK POCKET</b></div>
+    <div class="col-md-3 text-center"><b>SHAPE</b></div>
+</div>
+<div class="row" >
+    <div class="col-md-3 shape">        
+        <div class="col-md-6 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="pleat" id="pleat"
+                  value="no pleat" [(ngModel)]="form.pleat"  #pleat="ngModel"
+                />
+                <label class="form-check-label" for="pleat">
+                    <img src="assets/25.png">
+                    <p><b>NO PLEAT</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-6 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="pleat" id="pleat"
+                  value="2 pleat" [(ngModel)]="form.pleat"  #pleat="ngModel"
+                />
+                <label class="form-check-label" for="pleat">
+                    <img src="assets/26.png">
+                    <p><b>2 PLEAT</b></p>
+                </label>
+            </div>         
+        </div>
+    </div>
+    <div class="col-md-3 shape">
+        <div class="col-md-6 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="pocket_type" id="pocket_type"
+                  value="cross pocket" [(ngModel)]="form.pocket_type"  #pocket_type="ngModel"
+                />
+                <label class="form-check-label" for="pocket_type">
+                    <img src="assets/27.png">
+                    <p><b>CROSS POCKET</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-6 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="pocket_type" id="pocket_type"
+                  value="side pocket" [(ngModel)]="form.pocket_type"  #pocket_type="ngModel"
+                />
+                <label class="form-check-label" for="pocket_type">
+                    <img src="assets/28.png">
+                    <p><b>SIDE POCKET</b></p>
+                </label>
+            </div>         
+        </div>
+    </div> 
+    <div class="col-md-3 shape">        
+        <div class="col-md-6 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="back_pocket" id="back_pocket"
+                  value="1 back pocket" [(ngModel)]="form.back_pocket"  #back_pocket="ngModel"
+                />
+                <label class="form-check-label" for="back_pocket">
+                    <img src="assets/29.png">
+                    <p><b>1 BACK POCKET</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-6 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="back_pocket" id="back_pocket"
+                  value="2 back pocket" [(ngModel)]="form.back_pocket"  #back_pocket="ngModel"
+                />
+                <label class="form-check-label" for="back_pocket">
+                    <img src="assets/30.png">
+                    <p><b>2 BACK POCKET</b></p>
+                </label>
+            </div>         
+        </div>
+    </div>
+    <div class="col-md-3 shape">        
+        <div class="col-md-6 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="shape" id="shape"
+                  value="shoe shape" [(ngModel)]="form.shape"  #shape="ngModel"
+                />
+                <label class="form-check-label" for="shape">
+                    <img src="assets/31.png">
+                    <p><b>SHOE SHAPE</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-6 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="shape" id="shape"
+                  value="turn up" [(ngModel)]="form.shape"  #shape="ngModel"
+                />
+                <label class="form-check-label" for="shape">
+                    <img src="assets/32.png">
+                    <p><b>TURN UP</b></p>
+                </label>
+            </div>         
+        </div> 
+    </div>  
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-3 text-center"><b>CUT WAY</b></div>
+    <div class="col-md-3 text-center"><b>COLLAR TYPE</b></div>
+    <div class="col-md-6 text-center"><b>PLACKET</b></div>
+</div>
+<div class="row" >
+    <div class="col-md-3 shape">        
+        <div class="col-md-6 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="cut_way" id="cut_way"
+                  value="full cut way" [(ngModel)]="form.cut_way"  #cut_way="ngModel"
+                />
+                <label class="form-check-label" for="cut_way">
+                    <img src="assets/33.png">
+                    <p><b>FULL CUT WAY</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-6 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="cut_way" id="cut_way"
+                  value="semi cut way" [(ngModel)]="form.cut_way"  #cut_way="ngModel"
+                />
+                <label class="form-check-label" for="cut_way">
+                    <img src="assets/34.png">
+                    <p><b>SEMI CUT WAY</b></p>
+                </label>
+            </div>         
+        </div>
+    </div>
+    <div class="col-md-3 shape">
+        <div class="col-md-6 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="collar_type" id="collar_type"
+                  value="wing collar" [(ngModel)]="form.collar_type"  #collar_type="ngModel"
+                />
+                <label class="form-check-label" for="collar_type">
+                    <img src="assets/35.png">
+                    <p><b>WING COLLAR</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-6 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="collar_type" id="inlincollar_typeeRadio3"
+                  value="mandarin collar" [(ngModel)]="form.collar_type"  #collar_type="ngModel"
+                />
+                <label class="form-check-label" for="collar_type">
+                    <img src="assets/36.png">
+                    <p><b>MANDARIN COLLAR</b></p>
+                </label>
+            </div>         
+        </div>
+    </div> 
+    <div class="col-md-6 shape">        
+        <div class="col-md-3 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="placket" id="placket"
+                  value="forward point" [(ngModel)]="form.placket"  #placket="ngModel"
+                />
+                <label class="form-check-label" for="placket">
+                    <img src="assets/37.png">
+                    <p><b>FORWARD POINT</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-3 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="placket" id="placket"
+                  value="plain placket" [(ngModel)]="form.placket"  #placket="ngModel"
+                />
+                <label class="form-check-label" for="placket">
+                    <img src="assets/38.png">
+                    <p><b>PLAIN PLACKET</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-3 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="placket" id="placket"
+                  value="box placket" [(ngModel)]="form.placket"  #placket="ngModel"
+                />
+                <label class="form-check-label" for="placket">
+                    <img src="assets/39.png">
+                    <p><b>BOX PLACKET</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-3 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="placket" id="placket"
+                  value="concealed" [(ngModel)]="form.placket"  #placket="ngModel"
+                />
+                <label class="form-check-label" for="placket">
+                    <img src="assets/40.png">
+                    <p><b>CONCEALED</b></p>
+                </label>
+            </div>         
+        </div>
+    </div>
+      
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-5 text-center"><b>CUFF TYPE</b></div>
+    <div class="col-md-7 text-center"><b>OTHER</b></div>
+</div>
+<div class="row" >
+    <div class="col-md-5 shape">        
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="cuff_type" id="cuff_type"
+                  value="square cuff 2buttons" [(ngModel)]="form.cuff_type"  #cuff_type="ngModel"
+                />
+                <label class="form-check-label" for="cuff_type">
+                    <img src="assets/41.png">
+                    <p><b>SQUARE CUFF</b></p>
+                    <p><b>2 BUTTONS</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="cuff_type" id="cuff_type"
+                  value="round cuff 2buttons" [(ngModel)]="form.cuff_type"  #cuff_type="ngModel"
+                />
+                <label class="form-check-label" for="cuff_type">
+                    <img src="assets/41.png">
+                    <p><b>ROUND CUFF </b></p>
+                    <p><b>2 BUTTONS</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="cuff_type" id="cuff_type"
+                  value="french cuff" [(ngModel)]="form.cuff_type"  #cuff_type="ngModel"
+                />
+                <label class="form-check-label" for="cuff_type">
+                    <img src="assets/42.png">
+                    <p><b>FRENCH CUFF</b></p>
+                </label>
+            </div>         
+        </div>
+    </div>
+    
+    <div class="col-md-7 shape">        
+        <div class="col-md-3 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="other" id="other"
+                  value="np pocket" [(ngModel)]="form.other"  #other="ngModel"
+                />
+                <label class="form-check-label" for="other">
+                    <p class="noimage"></p>
+                    <p style="margin-top: -68px;"><b>NO POCKET</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-3 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="other" id="other"
+                  value="apple cut" [(ngModel)]="form.other"  #other="ngModel"
+                />
+                <label class="form-check-label" for="other">
+                    <p class="noimage"></p>
+                    <p style="margin-top: -68px;"><b>APPLE CUT</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-3 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="other" id="other"
+                  value="round" [(ngModel)]="form.other"  #other="ngModel"
+                />
+                <label class="form-check-label" for="other">
+                    <p class="noimage"></p>
+                    <p style="margin-top: -68px;"><b>ROUND</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-3 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="other" id="other"
+                  value="side slip" [(ngModel)]="form.other"  #other="ngModel"
+                />
+                <label class="form-check-label" for="other">
+                    <p class="noimage"></p>
+                    <p style="margin-top: -68px;"><b>SIDE SLIP</b></p>
+                </label>
+            </div>         
+        </div> 
+    </div>
+      
+</div>
+
+
+<div class="row mt-3">
+    <div class="col-md-5 text-center"><b>SHAPE</b></div>
+    <div class="col-md-7 text-center"><b>FIT TYPE </b></div>
+</div>
+<div class="row" >
+    <div class="col-md-5 shape">        
+        <div class="col-md-6 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="shape_type" id="shape_type"
+                value="v-shape" [(ngModel)]="form.shape_type"  #shape_type="ngModel"
+                />
+                <label class="form-check-label" for="shape_type">
+                    <img src="assets/43.png">
+                    <p><b>V-SHAPE</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-6 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="shape_type" id="shape_type"
+                value="round shape" [(ngModel)]="form.shape_type"  #shape_type="ngModel"
+                />
+                <label class="form-check-label" for="shape_type">
+                    <img src="assets/44.png">
+                    <p><b>ROUND SHAPE</b></p>
+                </label>
+            </div>         
+        </div>
+    </div>
+    
+    <div class="col-md-7 shape">        
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="fit_type" id="fit_type"
+                  value="slim fit" [(ngModel)]="form.fit_type"  #fit_type="ngModel"
+                />
+                <label class="form-check-label" for="fit_type">
+                    <p class="noimage"></p>
+                    <p style="margin-top: -68px;"><b>SLIM FIT</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="fit_type" id="fit_type"
+                  value="medium fit" [(ngModel)]="form.fit_type"  #fit_type="ngModel"
+                />
+                <label class="form-check-label" for="fit_type">
+                    <p class="noimage"></p>
+                    <p style="margin-top: -68px;"><b>MEDIUM FIT</b></p>
+                </label>
+            </div>         
+        </div>
+        <div class="col-md-4 shapes">
+            <div class="form-check form-check-inline">
+                <input mdbRadio class="form-check-input" type="radio" name="fit_type" id="fit_type"
+                  value="regular fit" [(ngModel)]="form.fit_type"  #fit_type="ngModel"
+                />
+                <label class="form-check-label" for="fit_type">
+                    <p class="noimage"></p>
+                    <p style="margin-top: -68px;"><b>REGULAR FIT</b></p>
+                </label>
+            </div>         
+        </div>
+    </div>
+      
+</div>
+
+    <div class=" text-center mt-5">
+        <div class="button-group">
+            <button type="submit" mat-raised-button class="btn-int-success">Submit </button>
+        </div>
+    </div>
+
+
+</form>
